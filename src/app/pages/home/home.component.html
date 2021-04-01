@@ -1,0 +1,64 @@
+<mat-sidenav-container>
+    <mat-sidenav #drawer  class="sidenav" fixedInViewport 
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar id="menu">
+        <div >
+          MENÚ
+        </div>
+
+        <span class="espaciador"></span>
+
+        <div>
+          <span class="material-icons">
+            widgets
+          </span>
+        </div>
+      </mat-toolbar>
+        <mat-nav-list (click)="drawer.toggle()">
+          <a mat-list-item  routerLink="/pages/tablas"><span id="link-menu"> Alumnos </span></a> 
+          <a mat-list-item  routerLink="/pages/tree"><span id="link-menu"> Documentos </span></a> 
+          <a mat-list-item  routerLink="/pages/drag-drop"><span id="link-menu"> Admin. de Tareas </span></a> 
+          <a mat-list-item  routerLink="/pages/formulario"><span id="link-menu">Ingreso Estudiantes</span></a>
+          <a mat-list-item  routerLink="/pages/giphy"><span id="link-menu">giphy</span></a>
+
+        </mat-nav-list>
+      </mat-sidenav>
+  <mat-sidenav-content>
+      <mat-toolbar>
+      
+        <div class="example-button-container">
+          <button mat-mini-fab color="primary" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div>
+
+        <span class="espaciador"></span>
+
+        <div class="example-button-row">
+            <button mat-raised-button color="warn">Logout</button>
+        </div>
+ 
+      </mat-toolbar>
+      <!-- Add Content Here -->
+
+      <div class="container">
+            <mat-card>
+              <mat-card-title-group>
+                <mat-card-title id="titulo">{{title}}</mat-card-title>
+                <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+              </mat-card-title-group><br><br>
+              
+              <router-outlet></router-outlet>
+
+            </mat-card>
+      </div>
+      
+      
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+ 

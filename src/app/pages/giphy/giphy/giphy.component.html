@@ -1,0 +1,67 @@
+<h1>GIPHY</h1>
+<mat-divider></mat-divider>
+<br>
+<!-- fxLayout, le da la direccion al contenido del div (row, column)
+     wrap, lo que hace es que al momento de minimizar la pagina, los elementos
+     se vayan ordenando automaticamente
+     fxFlex="20", dice que a cada elemento que se encuentre en el div, tenga un ancho de 20% del row
+-->
+
+<div fxLayout="row wrap"
+     fxLayout.xs = "column"
+     fxLayoutAlign="center"
+     fxLayoutGap="20px"
+     fxLayoutGap.xs="0">
+
+     <div fxFlex="80%">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Giphy API</mat-card-title>
+                <mat-card-subtitle>Buscar...</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <img matCardImage src="">
+            <mat-card-content>
+                Lista de giphys
+            </mat-card-content>
+            
+            <mat-card-actions>
+            </mat-card-actions>
+
+            <mat-card-footer>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+
+    <div fxFlex="20%"
+         fxFlex.lg="15"
+         fxFlex.sm="30">
+
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Historial de Búsqueda</mat-card-title>
+                <mat-card-subtitle>Historial...!!</mat-card-subtitle>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <img matCardImage src="">
+            <mat-card-content>
+                Vegeta
+                <mat-divider></mat-divider>
+                Gokú
+                <mat-divider></mat-divider>
+
+            </mat-card-content>
+           
+            <mat-card-actions>
+            </mat-card-actions>
+           
+            <mat-card-footer>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+   
+   
+</div>
+

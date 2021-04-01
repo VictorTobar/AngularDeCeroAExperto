@@ -1,0 +1,62 @@
+
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <span>POKO</span>
+                <span class="example-fill-remaining-space"></span>
+                <span class="align-center"></span>
+                <span class="example-spacer"></span>
+                <button mat-button>Sobre Nosotros </button>
+                <button mat-button>Contactos</button>
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>dialpad</mat-icon>
+                <span>Teléfono</span>
+            </button>
+            <button mat-menu-item disabled>
+                <mat-icon>voicemail</mat-icon>
+                <span>Enviar audio</span>
+            </button>
+            <button mat-menu-item>
+                <mat-icon>notifications_off</mat-icon>
+                <span>Notificaciones</span>
+            </button>
+            </mat-menu>
+        </mat-toolbar-row>   
+    </mat-toolbar>
+     <!-- 
+<a mat-list-item routerLink="/pages/dbz"><span id="link-menu"> Home </span></a>  
+
+<a mat-list-item routerLink="/pages/formulario"><span id="link-menu"> Formulario </span></a>  
+<a mat-list-item routerLink="/pages/nav"><span id="link-menu"> Nav </span></a>  
+-->
+
+<div id="caja-login">
+    <mat-card class="example-card">
+        <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+        <form class="example-form">
+            <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Username"  name="username" required>
+                </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td><mat-form-field class="example-full-width">
+                <input matInput placeholder="Password"  type="password" name="password" required>
+                </mat-form-field></td>
+            </tr></table>
+        </form>
+        </mat-card-content>
+        <mat-card-actions>
+        <button mat-raised-button (click)="login()" color="primary">Login</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

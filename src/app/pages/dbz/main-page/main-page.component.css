@@ -1,0 +1,114 @@
+ .caja-principal{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-template-columns: 250px 1fr 100px;
+    grid-template-rows: 80px 1fr 1fr 100px;    
+    border: 1px solid rgb(69, 181, 209);
+    min-height: 100%;
+    position: relative;
+    border-radius: 25px;
+ }
+
+.titulo{
+    grid-column: 1/4;
+    border: 1px solid rgb(22, 51, 216);
+    /*border-radius: 25px;*/
+    background-color: burlywood;
+    border-top-left-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
+
+}
+
+.row{
+    grid-row: 2/4;
+    border: 1px solid rgb(22, 216, 48);
+    /*border-radius: 25px;*/
+    background-color: rgb(135, 202, 222);
+    position: relative;
+    /*padding-bottom: 81px;*/
+    
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;/*flex-wrap: permite disponer a los hijos en varias lineas si surgiese la casuística de que no consiguiesen caber en una única línea. */
+    width: 100%;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+
+    border: 1px solid rgb(216, 28, 22);
+    background-color: rgb(222, 135, 210);
+    width: 100%;
+}
+
+.agregar{
+    
+    justify-content: center;
+    align-items: center;
+    /*solucionar el ancho*/
+    border: 1px solid rgb(216, 28, 22);
+    background-color: rgb(222, 135, 210);
+    width: 100%;
+
+}
+
+
+.col3{
+    grid-column: 3/4;
+    grid-row: 2/4 ;
+    border: 1px solid rgb(74, 22, 216);
+    /*border-radius: 25px;*/
+    background-color: rgb(94, 38, 184);
+    /*padding-bottom: 81px;*/
+    
+}
+
+.grid-boton{
+    display: grid;
+    grid-column: 3/3;
+}
+
+.botonMostrar{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50px;
+
+}
+
+
+.contenido{
+    grid-row: 2/4;
+    background-color: cadetblue;
+    /*padding-bottom: 81px;*/
+    padding: 30px;
+    text-align: justify;
+
+}
+
+.footer{
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background-color: black;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+}
+

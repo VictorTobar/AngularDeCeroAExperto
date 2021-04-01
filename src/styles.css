@@ -1,55 +1,52 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
 * {
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 200;
   }
   
   html, body {
-    
-    background: white;
-    margin: 20px;
-    color: #3e4144;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  
-  dd {
-    font-weight: bold;
-  }
-  
-  button {
-    background-color: black;
-    border-radius: 5px;
-    border: 0px;
-    color: white;
-    cursor: pointer;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding: 5px 10px;
-  }
-  
-  button:hover {
-    background-color: #3e4144;
-  }
-  
-  button:focus{ 
-    outline: none;
-  }
-  
-  .p-1 {
-    padding: 1px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
   }
 
-.row{
-  display: flex;
-  margin-inline: auto;
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+  font-family: DelaGothicOne;
+  src: url("/assets/fonts/DelaGothicOne-Regular.ttf") format("truetype");
 }
 
-.col{
-  flex-grow: 1;
-  margin-right: 10px;
+@font-face {
+  font-family: DbzFonts;
+  src: url("/assets/fonts/Saiyan-Sans Left Oblique.ttf") format("truetype");
 }
 
-input {
-  display: block;
-  margin: 5px;
+@font-face {
+  font-family: Exo2;
+  src: url("/assets/fonts/Exo2-VariableFont_wght.ttf") format("truetype");
 }
+
+
+
+
+p, h3, #personajes {
+  font-family: DelaGothicOne;
+
+}
+
+
+
+@use "@material/checkbox"; 
+@use "@material/icon-button";
+@use "@material/data-table/data-table";
+
+@include checkbox.core-styles;
+@include icon-button.core-styles;
+@include data-table.core-styles;
+@include data-table.theme-baseline;

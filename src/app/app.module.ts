@@ -1,28 +1,39 @@
+
+//Modulos
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { contadorComponent } from './contador/contador.component';
-import { HeroeComponent } from './heroe/heroe/heroe.component';
-import { ListadoComponent } from './heroe/listado/listado.component';
-import { MainPageComponent } from './dbz/main-page/main-page.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MaterialModule } from './material/material/material.module';
+import { FormsModule } from '@angular/forms';
+import { PagesRoutingModule } from './pages/pages-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PagesModule } from './pages/pages.module';
+import { DbzModule } from './pages/dbz/dbz.module';
+import { HttpClientModule } from '@angular/common/http';
 
-//MODULOS
-import { DbzModule } from './dbz/dbz.module';
+//Componentes
+
+import { AppComponent } from './app.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    contadorComponent,
-    HeroeComponent,
-    ListadoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DbzModule
+    BrowserAnimationsModule,
+    LayoutModule,
+    FormsModule,
+    MaterialModule,
+    PagesRoutingModule,
+    PagesModule,
+    DbzModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

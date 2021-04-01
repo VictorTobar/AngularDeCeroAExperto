@@ -1,0 +1,12 @@
+<p id="dbz-title"> Dragon Ball Z</p>
+<br>
+<h3 id="personajes">Personajes</h3>
+<hr>
+<ul>
+    
+    <li *ngFor="let p of get_personajes">
+     <p>   {{p.nombre}} - {{p.poder | number}}</p>
+    </li>
+
+    
+</ul>   

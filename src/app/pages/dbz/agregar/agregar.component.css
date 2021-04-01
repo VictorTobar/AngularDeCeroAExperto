@@ -1,0 +1,38 @@
+#agregar{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+    /*height: 200vh;*/
+}
+/*El formulario se toma como otra etiqueta*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+}
+
+input{
+    border-radius: 25px;
+}
+
+button{
+    background-color: teal;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  h3{
+    font-family: Exo2;
+    font-weight: bold;
+  }
+  
