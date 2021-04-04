@@ -7,7 +7,7 @@ import { HeroeComponent } from './heroe/heroe/heroe.component';
 import { MaterialModule } from '../material/material/material.module';
 import { LoginComponent } from './login/login.component';
 import { FormulariosComponent } from './formularios/formularios.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
@@ -17,6 +17,7 @@ import { ArbolComponent } from './arbol/arbol.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { GiphyModule } from './giphy/giphy.module';
+import { ProgressModule } from './progreso/progress.module';
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { GiphyModule } from './giphy/giphy.module';
     FormularioDireccionComponent,
     TablasComponent,
     ArbolComponent,
-    DragDropComponent
+    DragDropComponent,
+
+
 
 
   ],
@@ -42,7 +45,9 @@ import { GiphyModule } from './giphy/giphy.module';
     LayoutModule,
     CommonModule,
     DragDropModule,
-    GiphyModule
+    GiphyModule,
+    FormsModule,
+    ProgressModule
 
 
   ],

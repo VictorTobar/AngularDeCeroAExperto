@@ -11,6 +11,7 @@ import { ArbolComponent } from './arbol/arbol.component';
 import { TablasComponent } from './tablas/tablas.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { GiphyComponent } from './giphy/giphy/giphy.component';
+import { ProgressComponent } from './progreso/progress/progress.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path: 'giphy',
         component: GiphyComponent
+      },
+      {
+        path: 'progress',
+        component: ProgressComponent
       },
       {
         path: '**',

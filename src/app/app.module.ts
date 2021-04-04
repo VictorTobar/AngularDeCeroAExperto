@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 //Componentes
 
 import { AppComponent } from './app.component';
+import { ProgressModule } from './pages/progreso/progress.module';
 
 
 
@@ -33,7 +34,8 @@ import { AppComponent } from './app.component';
     PagesRoutingModule,
     PagesModule,
     DbzModule,
-    HttpClientModule
+    HttpClientModule,
+    ProgressModule
   ],
   providers: [],
   bootstrap: [AppComponent]
